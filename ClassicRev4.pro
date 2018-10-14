@@ -1,4 +1,4 @@
-update=Sat 03 Jun 2017 18:54:55 CEST
+update=15.09.2018 08:38:16
 version=1
 last_client=kicad
 [pcbnew]
@@ -112,3 +112,13 @@ LibName80=/data/Copy/Nixie/KiCAD/lbr/optocoupler
 LibName81=/data/Copy/Nixie/KiCAD/lbr/rcl
 LibName82=ClassicRev4
 LibName83=ClassicRev4-rescue
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

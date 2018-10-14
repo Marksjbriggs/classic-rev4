@@ -1,96 +1,16 @@
 EESchema Schematic File Version 2
-LIBS:KickstarterNixie
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:brooktre
-LIBS:cmos4000
-LIBS:cmos_ieee
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:intel
-LIBS:interface
-LIBS:ir
-LIBS:Lattice
-LIBS:linear
-LIBS:logo
-LIBS:maxim
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:power
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:Xicor
-LIBS:xilinx
-LIBS:Zilog
-LIBS:transistor-power
-LIBS:russian-nixies
-LIBS:optocoupler
-LIBS:rcl
-LIBS:KickstarterNixie-cache
+LIBS:ClassicRev4
+LIBS:ClassicRev4-rescue
+LIBS:ClassicRev4-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "KickstarterNixie.sch"
+Title "Classic Revision 4 Module"
 Date "13 JAN 2016"
-Rev ""
-Comp ""
+Rev "Rev004c"
+Comp "Ian Sparkes Nixie Clocks"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -199,10 +119,10 @@ F 3 "" H 2400 -31600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #GND01
+L GND #GND1
 U 1 1 5696C10C
 P 5900 4000
-F 0 "#GND01" H 5800 3900 70  0001 L BNN
+F 0 "#GND1" H 5800 3900 70  0001 L BNN
 F 1 "GND" H 5650 4000 70  0000 L BNN
 F 2 "" H 5900 4000 60  0001 C CNN
 F 3 "" H 5900 4000 60  0001 C CNN
@@ -210,21 +130,21 @@ F 3 "" H 5900 4000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #GND02
+L GND #GND2
 U 1 1 5696C170
 P 7300 3300
-F 0 "#GND02" H 7200 3200 70  0001 L BNN
-F 1 "GND" H 7200 3200 70  0000 L BNN
+F 0 "#GND2" H 7200 3200 70  0001 L BNN
+F 1 "GND" H 7200 3100 70  0000 L BNN
 F 2 "" H 7300 3300 60  0001 C CNN
 F 3 "" H 7300 3300 60  0001 C CNN
 	1    7300 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #GND03
+L GND #GND3
 U 1 1 5696C1D4
 P 7300 8500
-F 0 "#GND03" H 7200 8400 70  0001 L BNN
+F 0 "#GND3" H 7200 8400 70  0001 L BNN
 F 1 "GND" H 7200 8400 70  0000 L BNN
 F 2 "" H 7300 8500 60  0001 C CNN
 F 3 "" H 7300 8500 60  0001 C CNN
@@ -232,21 +152,21 @@ F 3 "" H 7300 8500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #GND04
+L GND #GND4
 U 1 1 5696C238
 P 8800 3900
-F 0 "#GND04" H 8700 3800 70  0001 L BNN
-F 1 "GND" H 8700 3800 70  0000 L BNN
+F 0 "#GND4" H 8700 3800 70  0001 L BNN
+F 1 "GND" H 8700 3700 70  0000 L BNN
 F 2 "" H 8800 3900 60  0001 C CNN
 F 3 "" H 8800 3900 60  0001 C CNN
 	1    8800 3900
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #GND05
+L GND #GND5
 U 1 1 5696C29C
 P 12400 4700
-F 0 "#GND05" H 12300 4600 70  0001 L BNN
+F 0 "#GND5" H 12300 4600 70  0001 L BNN
 F 1 "GND" H 12300 4500 70  0000 L BNN
 F 2 "" H 12400 4700 60  0001 C CNN
 F 3 "" H 12400 4700 60  0001 C CNN
@@ -280,8 +200,8 @@ $Comp
 L 74XX-US_74141N IC3
 U 1 1 5696C4F4
 P 10100 7300
-F 0 "IC3" H 9801 7825 70  0000 L BNN
-F 1 "74141N" H 9800 6600 70  0000 L BNN
+F 0 "IC3" H 10000 7850 70  0000 L BNN
+F 1 "K155ID1" H 9800 6600 70  0000 L BNN
 F 2 "Recovered:74141_DIL16" H 10090 7090 70  0001 L TNN
 F 3 "" H 10100 7300 60  0001 C CNN
 	1    10100 7300
@@ -292,7 +212,7 @@ L 74XX-US_74141N IC3
 U 2 1 5696C558
 P 6600 7900
 F 0 "IC3" H 6575 7875 70  0000 L BNN
-F 1 "74141N" H 6590 7790 70  0001 L TNN
+F 1 "K155ID1" H 6590 7790 70  0001 L TNN
 F 2 "Recovered:74141_DIL16" H 6590 7690 70  0001 L TNN
 F 3 "" H 6600 7900 60  0001 C CNN
 F 4 "GND" V 6674 7600 50  0000 L BNN "Field4"
@@ -728,15 +648,15 @@ F 3 "" H 2800 8100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ARDUNIX6_MA04-1 SV2
+L ARDUNIX6_MA06-1 SV2
 U 1 1 5696E3D0
-P 2800 9400
-F 0 "SV2" H 2751 9630 70  0000 L BNN
-F 1 "CONN_FRONT" H 2750 9000 70  0000 L BNN
-F 2 "Recovered:ARDUNIX6_MA04-1" H 2790 9190 70  0001 L TNN
-F 3 "" H 2800 9400 60  0001 C CNN
-	1    2800 9400
-	1    0    0    -1  
+P 3500 9600
+F 0 "SV2" H 3450 9950 70  0000 L BNN
+F 1 "CONN_FRONT" H 3250 9050 70  0000 L BNN
+F 2 "Recovered:ARDUNIX6_MA06-1" H 3490 9390 70  0001 L TNN
+F 3 "" H 3500 9600 60  0001 C CNN
+	1    3500 9600
+	-1   0    0    1   
 $EndComp
 $Comp
 L ARDUNIX6_MA04-1 SV4
@@ -775,53 +695,53 @@ Text Label 3700 2000 0    65   ~ 0
 170V
 Text Label 3100 7400 0    65   ~ 0
 170V
-Text Label 2900 5900 0    65   ~ 0
+Text Label 3300 5900 2    65   ~ 0
 ANODE1
 Text Label 11100 3000 0    65   ~ 0
 ANODE1
-Text Label 2900 5200 0    65   ~ 0
+Text Label 3300 5200 2    65   ~ 0
 ANODE2
 Text Label 11100 3100 0    65   ~ 0
 ANODE2
-Text Label 2900 4500 0    65   ~ 0
+Text Label 3300 4500 2    65   ~ 0
 ANODE3
 Text Label 11100 3200 0    65   ~ 0
 ANODE3
-Text Label 6300 6100 0    65   ~ 0
+Text Label 6700 6100 2    65   ~ 0
 ANODE4
 Text Label 11100 3400 0    65   ~ 0
 ANODE4
-Text Label 6300 5400 0    65   ~ 0
+Text Label 6700 5400 2    65   ~ 0
 ANODE5
 Text Label 11100 2300 0    65   ~ 0
 ANODE5
-Text Label 6300 4700 0    65   ~ 0
+Text Label 6700 4700 2    65   ~ 0
 ANODE6
 Text Label 11100 2400 0    65   ~ 0
 ANODE6
 Text Label 11100 3700 0    65   ~ 0
 BTN1
-Text Label 3300 9400 0    65   ~ 0
+Text Label 3000 9500 2    65   ~ 0
 BTN1
-Text Label 3950 9500 0    65   ~ 0
+Text Label 4250 9500 2    65   ~ 0
 B_LED
 Text Label 13100 1900 0    65   ~ 0
 B_LED
-Text Label 8800 7200 0    65   ~ 0
+Text Label 9300 7200 2    65   ~ 0
 DIGIT_A
 Text Label 11100 4400 0    65   ~ 0
 DIGIT_A
 Text Label 8000 9350 0    65   ~ 0
 DIGIT_A
-Text Label 8800 7300 0    65   ~ 0
+Text Label 9300 7300 2    65   ~ 0
 DIGIT_B
 Text Label 11100 4100 0    65   ~ 0
 DIGIT_B
-Text Label 8800 7400 0    65   ~ 0
+Text Label 9300 7400 2    65   ~ 0
 DIGIT_C
 Text Label 11100 3900 0    65   ~ 0
 DIGIT_C
-Text Label 8800 7500 0    65   ~ 0
+Text Label 9300 7500 2    65   ~ 0
 DIGIT_D
 Text Label 11100 4300 0    65   ~ 0
 DIGIT_D
@@ -831,27 +751,27 @@ Text Label 7100 8000 0    65   ~ 0
 DLS
 Text Label 11100 2200 0    65   ~ 0
 DLS
-Text Label 3300 9500 0    65   ~ 0
+Text Label 3000 9600 2    65   ~ 0
 DLS
-Text Label 7100 5000 0    65   ~ 0
+Text Label 7200 4900 2    65   ~ 0
 GND
-Text Label 7100 5700 0    65   ~ 0
+Text Label 7200 5600 2    65   ~ 0
 GND
-Text Label 7100 6400 0    65   ~ 0
+Text Label 7200 6300 2    65   ~ 0
 GND
-Text Label 3700 4800 0    65   ~ 0
+Text Label 3800 4700 2    65   ~ 0
 GND
-Text Label 3700 5500 0    65   ~ 0
+Text Label 3800 5400 2    65   ~ 0
 GND
-Text Label 3700 6200 0    65   ~ 0
+Text Label 3800 6100 2    65   ~ 0
 GND
-Text Label 3300 9600 0    65   ~ 0
+Text Label 3000 9800 2    65   ~ 0
 GND
-Text Label 5250 9600 0    65   ~ 0
+Text Label 5450 9600 2    65   ~ 0
 GND
-Text Label 6500 9250 0    65   ~ 0
+Text Label 6800 9250 2    65   ~ 0
 GND
-Text Label 3950 9400 0    65   ~ 0
+Text Label 4250 9400 2    65   ~ 0
 G_LED
 Text Label 13100 2600 0    65   ~ 0
 G_LED
@@ -863,39 +783,37 @@ Text Label 3300 3100 0    65   ~ 0
 HVS
 Text Label 11100 2100 0    65   ~ 0
 HVS
-Text Label 6500 9350 0    65   ~ 0
+Text Label 6800 9350 2    65   ~ 0
 MOSI
-Text Label 8900 1900 0    65   ~ 0
-RESET
 Text Label 8000 9250 0    65   ~ 0
 RESET
 Text Label 13100 3400 0    65   ~ 0
 R_LED
-Text Label 3950 9300 0    65   ~ 0
+Text Label 4250 9300 2    65   ~ 0
 R_LED
 Text Label 11100 2600 0    65   ~ 0
 SCL
-Text Label 5250 9300 0    65   ~ 0
+Text Label 5450 9300 2    65   ~ 0
 SCL
 Text Label 11100 2500 0    65   ~ 0
 SDA
-Text Label 5250 9400 0    65   ~ 0
+Text Label 5450 9400 2    65   ~ 0
 SDA
 Text Label 13100 4000 0    65   ~ 0
 TICK_LED
-Text Label 3750 9600 0    65   ~ 0
+Text Label 4250 9600 2    65   ~ 0
 TICK_LED
 Text Label 7300 7400 0    65   ~ 0
 VCC
 Text Label 8100 1900 2    65   ~ 0
 VCC
-Text Label 5250 9500 0    65   ~ 0
+Text Label 5450 9500 2    65   ~ 0
 VCC
-Text Label 3300 9300 0    65   ~ 0
+Text Label 3000 9300 2    65   ~ 0
 VCC
 Text Label 3300 8700 0    65   ~ 0
 VCC
-Text Label 6500 9450 0    65   ~ 0
+Text Label 6800 9450 2    65   ~ 0
 VCC
 Text Label 4200 7400 0    65   ~ 0
 VIN
@@ -903,162 +821,38 @@ Text Label 6000 2400 0    65   ~ 0
 VIN
 Text Label 3100 2500 1    20   ~ 0
 170V
-Text Label 3400 5900 2    20   ~ 0
-ANODE1
-Text Label 10900 3000 0    20   ~ 0
-ANODE1
-Text Label 3400 5200 2    20   ~ 0
-ANODE2
-Text Label 10900 3100 0    20   ~ 0
-ANODE2
-Text Label 3400 4500 2    20   ~ 0
-ANODE3
-Text Label 10900 3200 0    20   ~ 0
-ANODE3
-Text Label 6800 6100 2    20   ~ 0
-ANODE4
-Text Label 10900 3400 0    20   ~ 0
-ANODE4
 Text Label 10900 2300 0    20   ~ 0
-ANODE5
+PIR
 Text Label 10900 2400 0    20   ~ 0
-ANODE6
+GPIO
 Text Label 9000 2400 2    20   ~ 0
 AREF
-Text Label 8600 3100 1    20   ~ 0
-AREF
-Text Label 10900 3700 0    20   ~ 0
-BTN1
-Text Label 3100 9400 0    20   ~ 0
-BTN1
-Text Label 4450 9500 2    20   ~ 0
-B_LED
-Text Label 12900 1900 0    20   ~ 0
-B_LED
-Text Label 9600 7200 2    20   ~ 0
-DIGIT_A
-Text Label 10900 4400 0    20   ~ 0
-DIGIT_A
-Text Label 7700 9350 0    20   ~ 0
-DIGIT_A
-Text Label 9600 7300 2    20   ~ 0
-DIGIT_B
-Text Label 10900 4100 0    20   ~ 0
-DIGIT_B
-Text Label 9600 7400 2    20   ~ 0
-DIGIT_C
-Text Label 10900 3900 0    20   ~ 0
-DIGIT_C
-Text Label 9600 7500 2    20   ~ 0
-DIGIT_D
-Text Label 10900 4300 0    20   ~ 0
-DIGIT_D
-Text Label 7700 9450 0    20   ~ 0
-DIGIT_D
-Text Label 6900 7900 3    20   ~ 0
-DLS
-Text Label 10900 2200 0    20   ~ 0
-DLS
-Text Label 3100 9500 0    20   ~ 0
-DLS
-Text Label 7700 2800 3    20   ~ 0
-GND
-Text Label 7700 3000 1    20   ~ 0
-GND
-Text Label 7300 3200 1    20   ~ 0
-GND
-Text Label 3100 9600 0    20   ~ 0
-GND
 Text Label 9000 2300 2    20   ~ 0
 GND
 Text Label 9000 3300 2    20   ~ 0
 GND
-Text Label 8600 2200 1    20   ~ 0
-GND
-Text Label 8600 3400 3    20   ~ 0
-GND
-Text Label 5650 9600 2    20   ~ 0
-GND
-Text Label 7100 9250 2    20   ~ 0
-GND
-Text Label 4450 9400 2    20   ~ 0
-G_LED
-Text Label 12900 2600 0    20   ~ 0
-G_LED
-Text Label 5100 3200 1    20   ~ 0
-HVD
-Text Label 10900 4000 0    20   ~ 0
-HVD
 Text Label 3100 2900 3    20   ~ 0
 HVS
 Text Label 3100 3200 1    20   ~ 0
-HVS
-Text Label 10900 2100 0    20   ~ 0
 HVS
 Text Label 10900 4200 0    20   ~ 0
 MOSI
 Text Label 11100 4200 2    20   ~ 0
 MOSI
-Text Label 7100 9350 2    20   ~ 0
-MOSI
 Text Label 11500 4200 0    20   ~ 0
-N$1
-Text Label 11800 2100 2    20   ~ 0
-N$31
-Text Label 10900 3300 0    20   ~ 0
-N$31
-Text Label 11800 3600 2    20   ~ 0
-N$32
+TICK_BASE
 Text Label 10900 3600 0    20   ~ 0
-N$32
+R_GATE
 Text Label 10900 3500 0    20   ~ 0
-N$35
+G_GATE
 Text Label 9000 2100 2    20   ~ 0
 RESET
-Text Label 8900 1900 0    20   ~ 0
-RESET
-Text Label 7700 9250 0    20   ~ 0
-RESET
-Text Label 12900 3400 0    20   ~ 0
-R_LED
-Text Label 4450 9300 2    20   ~ 0
-R_LED
-Text Label 10900 2600 0    20   ~ 0
-SCL
-Text Label 5650 9300 2    20   ~ 0
-SCL
-Text Label 10900 2500 0    20   ~ 0
-SDA
-Text Label 5650 9400 2    20   ~ 0
-SDA
-Text Label 12900 4000 0    20   ~ 0
-TICK_LED
-Text Label 4450 9600 2    20   ~ 0
-TICK_LED
 Text Label 9000 2500 2    20   ~ 0
 VCC
 Text Label 9000 3500 2    20   ~ 0
 VCC
-Text Label 8600 2500 3    20   ~ 0
-VCC
-Text Label 8500 1900 2    20   ~ 0
-VCC
-Text Label 5650 9500 2    20   ~ 0
-VCC
-Text Label 3100 9300 0    20   ~ 0
-VCC
-Text Label 7100 9450 2    20   ~ 0
-VCC
-Text Label 7700 2500 1    20   ~ 0
-XTAL1
-Text Label 8000 2800 1    20   ~ 0
-XTAL1
 Text Label 9000 2800 2    20   ~ 0
 XTAL1
-Text Label 7700 3300 3    20   ~ 0
-XTAL2
-Text Label 8000 3000 3    20   ~ 0
-XTAL2
 Text Label 9000 3000 2    20   ~ 0
 XTAL2
 $Comp
@@ -1090,19 +884,9 @@ CATHODE_6
 Text Label 10600 6900 0    20   ~ 0
 CATHODE_7
 Text Label 10600 7800 0    20   ~ 0
-CATHODE_9
-Text Label 10600 7700 0    20   ~ 0
 CATHODE_8
-Text Label 6800 5400 2    20   ~ 0
-ANODE5
-Text Label 6800 4700 2    20   ~ 0
-ANODE6
-Text Label 7200 4900 0    20   ~ 0
-GND
-Text Label 7200 5600 0    20   ~ 0
-GND
-Text Label 7200 6300 0    20   ~ 0
-GND
+Text Label 10600 7700 0    20   ~ 0
+CATHODE_9
 Wire Wire Line
 	3100 2400 3100 2500
 Connection ~ 3700 2400
@@ -1150,7 +934,7 @@ Wire Wire Line
 Wire Wire Line
 	10900 3700 11100 3700
 Wire Wire Line
-	3100 9400 3300 9400
+	3000 9500 3200 9500
 Wire Wire Line
 	4450 9500 4250 9500
 Wire Wire Line
@@ -1212,7 +996,7 @@ Wire Wire Line
 Wire Wire Line
 	10900 2200 11100 2200
 Wire Wire Line
-	3100 9500 3300 9500
+	3000 9600 3200 9600
 Wire Wire Line
 	4600 3800 4600 3200
 Wire Wire Line
@@ -1246,7 +1030,7 @@ Wire Wire Line
 	7300 2900 7300 3300
 Connection ~ 7700 2900
 Wire Wire Line
-	3100 9600 3300 9600
+	3000 9800 3200 9800
 Wire Wire Line
 	3300 8400 7300 8400
 Wire Wire Line
@@ -1479,7 +1263,7 @@ Connection ~ 8300 1900
 Wire Wire Line
 	5650 9500 5450 9500
 Wire Wire Line
-	3100 9300 3300 9300
+	3000 9300 3200 9300
 Wire Wire Line
 	3100 8300 3200 8300
 Wire Wire Line
@@ -1549,7 +1333,7 @@ Wire Wire Line
 Wire Wire Line
 	4800 3100 5200 3100
 Wire Wire Line
-	5100 3100 5100 3200
+	5100 2950 5100 3200
 Connection ~ 5100 3100
 Wire Wire Line
 	3100 3800 6200 3800
@@ -1583,12 +1367,6 @@ Wire Wire Line
 	11100 7700 11100 7800
 Wire Wire Line
 	8500 4900 9100 4900
-Text Label 3800 4700 0    20   ~ 0
-gnd
-Text Label 3800 5400 0    20   ~ 0
-GND
-Text Label 3800 6100 0    20   ~ 0
-GND
 Wire Wire Line
 	8150 4350 8150 6100
 Text Label 8150 4350 0    59   ~ 0
@@ -1649,10 +1427,10 @@ F 3 "" H 9300 5150 50  0000 C CNN
 $EndComp
 Connection ~ 5900 3800
 $Comp
-L PWR_FLAG #FLG06
+L PWR_FLAG #FLG2
 U 1 1 56B900AF
 P 6900 7400
-F 0 "#FLG06" H 6900 7495 50  0001 C CNN
+F 0 "#FLG2" H 6900 7495 50  0001 C CNN
 F 1 "PWR_FLAG" H 6900 7580 50  0000 C CNN
 F 2 "" H 6900 7400 50  0000 C CNN
 F 3 "" H 6900 7400 50  0000 C CNN
@@ -1684,10 +1462,10 @@ F 3 "" H 6100 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG07
+L PWR_FLAG #FLG1
 U 1 1 56B92529
 P 6200 3600
-F 0 "#FLG07" H 6200 3695 50  0001 C CNN
+F 0 "#FLG1" H 6200 3695 50  0001 C CNN
 F 1 "PWR_FLAG" H 6200 3780 50  0000 C CNN
 F 2 "" H 6200 3600 50  0000 C CNN
 F 3 "" H 6200 3600 50  0000 C CNN
@@ -1741,4 +1519,25 @@ Wire Wire Line
 	5100 3800 5100 3600
 Text Label 4600 2750 0    20   ~ 0
 DRAIN
+Wire Wire Line
+	3000 9400 3200 9400
+Wire Wire Line
+	3000 9700 3200 9700
+Text Label 3000 9400 2    60   ~ 0
+PIR
+Text Label 3000 9700 2    60   ~ 0
+GPIO
+Text Label 10900 3300 0    20   ~ 0
+B_GATE
+$Comp
+L TEST_1P TP4
+U 1 1 5B8C4128
+P 5100 2950
+F 0 "TP4" H 5100 3220 50  0000 C CNN
+F 1 "HVD" H 5100 3150 50  0000 C CNN
+F 2 "Recovered:TESTPAD_P1-13" H 5300 2950 50  0001 C CNN
+F 3 "" H 5300 2950 50  0000 C CNN
+	1    5100 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
