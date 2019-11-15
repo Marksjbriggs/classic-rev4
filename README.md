@@ -10,6 +10,17 @@ We ask for modifications and contributions to be submitted to
 
 nixie at protonmail.com
 
+# code
+
+The code is available here:
+
+https://bitbucket.org/isparkes/nixiefirmwarev1/src/master/
+
+4 Digit code is in the directory: ardunixFade9_4_digit
+
+6 Digit code is in the directory: ardunixFade9_6_digit
+
+
 # Support
 
 You can get support for this board at
